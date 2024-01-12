@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Age Calculator App</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark extra-margin">
+        <div class="container">
+            <a class="navbar-brand" href="#"><h1 class="logo">AGE CALCULATOR</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse col-md-8 mx-auto navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link px-4 text-white" href="#"><h6>Home</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-white" href="#"><h6>About</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-white" href="#"><h6>Services</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-white" href="#"><h6>Blog</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 text-white" href="#"><h6>Contact</h6></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+     <!-- Banner -->
+     <div class="jumbotron jumbotron-fluid text-center extra-margin">
+        <div class="container col-md-8 mx-auto half-margin">
+            <h3>Calculate your age and find out if you are an adult or a child.</h3>
+        </div>
+        <div class="container col-md-3 mx-auto">
+            <div class="input-group">
+                <input id="input" type="text" class="form-control" placeholder="Please enter your age">
+                <button onclick="ageCalc()" type="button" class="btn text-light btn-dark btn-outline-secondary">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="container extra-margin">
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-md-6 mx-auto newMargin">
+                <div class="card shadow-lg" id="card-1">
+                    <img src="images/adult.webp" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-success" id="card-1x">ADULT</h4>
+                        <p class="card-text text-center">A person who is fully grown or developed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 mx-auto newMargin">
+                <div class="card shadow-lg" id="card-2">
+                    <img src="images/child.webp" class="card-img-top" alt="Card Image 2">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-danger" id="card-2x">CHILD</h4>
+                        <p class="card-text text-center">A young person who is below the legal age.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quote -->
+    <div class="jumbotron jumbotron-fluid text-center extra-margin">
+        <div class="container col-md-6 mx-auto half-margin">
+            <figure class="mark">
+                <blockquote id="q1" class="blockquote">
+                  <p>“Adults follow paths. Children explore.”</p>
+                </blockquote>
+                <figcaption id="q2" class="blockquote-footer">
+                    Christopher Moore
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <h2>Developed By Md. Shafayat Hossain, With &#10084;.</h2>
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+    </footer>
+    
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

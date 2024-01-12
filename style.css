@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: ;
+}
+
+.extra-margin{
+    margin-bottom: 50px;
+}
+
+.half-margin{
+    margin-bottom: 25px;
+}
+
+.afterEffect{
+    filter: blur(15px);
+}
+
+.nav-link:hover{
+    scale: 1.15;
+}
+
+@font-face {
+    font-family: wrong;
+    src: url(Fonts/Wrong\ Delivery.ttf);
+}
+
+.logo{
+    font-family: 'wrong';
+}
+
+.logo:hover{
+    scale: 1.25;
+}
